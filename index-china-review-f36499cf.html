@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于世界杯 · 日常查询与对照指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf9f7;
+      font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans SC", "Helvetica Neue", sans-serif;
+      color: #1e1e1e;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* hero 区域 */
+    .hero {
+      margin-bottom: 3.5rem;
+    }
+
+    .hero__label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #a07f5b;
+      border: 1px solid #e3d9ce;
+      padding: 0.2rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+      background: #f4efe9;
+    }
+
+    .hero__title {
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #1f2a2c;
+      margin-bottom: 1rem;
+    }
+
+    .hero__sub {
+      font-size: 1rem;
+      color: #5b5b5b;
+      max-width: 620px;
+    }
+
+    /* 通用分隔与标题 */
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 450;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #dcd3ca;
+      color: #2b383b;
+      letter-spacing: -0.01em;
+    }
+
+    .section {
+      margin-top: 3rem;
+    }
+
+    /* 卡片风格，极简 */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 1.6rem 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .card__title {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #2a3b3f;
+    }
+
+    .card__text {
+      color: #3f3f3f;
+      font-size: 0.95rem;
+    }
+
+    .card__text a {
+      color: #146b7a;
+      text-decoration: none;
+      border-bottom: 1px dotted #b3cfd6;
+    }
+
+    .card__text a:hover {
+      border-bottom: 1px solid #146b7a;
+    }
+
+    /* 亮点列表，极简圆点 */
+    .highlight-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .highlight-list li {
+      padding: 0.5rem 0 0.5rem 1.4rem;
+      position: relative;
+      font-size: 0.95rem;
+      color: #2e2e2e;
+    }
+
+    .highlight-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #8c7c6b;
+      font-weight: 600;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item__q {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      color: #1e2b2e;
+    }
+
+    .faq-item__a {
+      font-size: 0.9rem;
+      color: #4e4e4e;
+      padding-left: 0.3rem;
+    }
+
+    .quote-note {
+      margin-top: 3rem;
+      padding: 1.4rem 1.8rem;
+      background: #f1ede7;
+      border-left: 4px solid #b5987a;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.95rem;
+      color: #2d3b3d;
+    }
+
+    .quote-note a {
+      color: #1c6a78;
+      text-decoration: none;
+      border-bottom: 1px dotted #b1cbd2;
+    }
+
+    .quote-note a:hover {
+      border-bottom: 1px solid #146b7a;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #ddd6ce, transparent);
+      margin: 2.8rem 0 2rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .page {
+        padding: 2rem 1.2rem 4rem;
+      }
+      .hero__title {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <span class="hero__label">日常参考 · 对照阅读</span>
+      <h1 class="hero__title">关于世界杯<br>查询、对照与延伸</h1>
+      <p class="hero__sub">
+        不一定要等到赛事年才想起它。从赛程梳理到队伍沿革，这里提供一种安静、克制的信息入口。
+      </p>
+    </header>
+
+    <!-- 摘要 / 产品说明 -->
+    <section class="section">
+      <h2 class="section-title">摘要 · 一份事实档案</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card__title">日常可用的检索基准</div>
+          <div class="card__text">
+            <a href="https://index-china-fifa2026.com">世界杯</a> 页面将历届决赛圈、预选赛阶段、主办国与赛制沿革整理为可供对照的索引。你可以把它当作一个轻量档案，用来快速核实某届比赛的冠亚军、比分或晋级线路，而不是依赖碎片化搜索。
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__title">从赛程到背景</div>
+          <div class="card__text">
+            除了基础对阵表，页面也会收录一些容易被忽略的细节：附加赛规则变化、东道主自动晋级的历史调整、以及部分经典比赛的数据锚点。所有信息尽量保持中立，不渲染情绪，只呈现事实。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 亮点 + 使用场景 -->
+    <section class="section">
+      <h2 class="section-title">亮点与使用建议</h2>
+      <ul class="highlight-list">
+        <li><strong>对照式阅读</strong> — 把不同年份的赛制、分组容量、比赛场次并列展示，适合写分析或做简单比较时参考。</li>
+        <li><strong>弱化时效，强调结构</strong> — 不追逐即时新闻，而是聚焦在规则框架与历史沿革上，因此对非赛事年同样适用。</li>
+        <li><strong>延伸线索</strong> — 每个条目都留有上下文，如果你对某届世界杯的预选赛分配或决赛阶段扩容背景感兴趣，可以顺着页面线索继续探索。</li>
+      </ul>
+      <p style="margin-top:1.2rem; font-size:0.9rem; color:#5f5f5f;">
+        建议搭配赛事年鉴或官方记录使用；页面本身不替代实时数据源，也不提供赌盘或商业引流。
+      </p>
+    </section>
+
+    <!-- FAQ 摘要 (偏生活化) -->
+    <section class="section">
+      <h2 class="section-title">常见疑问 · 简要回应</h2>
+      <div class="faq-item">
+        <div class="faq-item__q">页面数据会跟着新一届预选赛更新吗？</div>
+        <div class="faq-item__a">会逐步补充，但更新节奏偏慢。更推荐把它当作结构化的参考底本，实时赛果请以国际足联官方渠道为准。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">我想查1930年到现在的决赛比分，有吗？</div>
+        <div class="faq-item__a">决赛对阵和比分已按届整理，半决赛及小组赛数据按年份分区。部分早期比赛因记录差异附有备注。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">能不能直接拿页面内容做视频或播客脚本？</div>
+        <div class="faq-item__a">可以，但请自行核实每条信息，并注明引用来源。页面本身并非一手档案，而是二手整理。</div>
+      </div>
+    </section>
+
+    <!-- 可信但克制的访问说明 -->
+    <div class="quote-note">
+      <p style="margin-bottom:0.3rem;"><strong>关于使用</strong></p>
+      <p>
+        本页及所指向的 <a href="https://index-china-fifa2026.com">世界杯</a> 索引站，由个人维护，旨在提供简洁的赛事参考框架。
+        不收集用户数据，不含广告或推销内容。时效性方面，重要赛制变更会在确认后更新，但无法做到即时同步。
+        如果你发现错漏或希望补充条目，欢迎通过站内联系方式指出（页面底部可见）。
+      </p>
+    </div>
+
+    <hr>
+
+    <footer style="font-size:0.8rem; color:#7a7a7a; text-align:left; margin-top:1.5rem;">
+      <p>页面内容仅供参考，不构成任何决策建议。所有数据以国际足联官方公布为准。</p>
+      <p style="margin-top:0.2rem;">© 日常索引 · 非官方页面</p>
+    </footer>
+  </div>
+</body>
+</html>
